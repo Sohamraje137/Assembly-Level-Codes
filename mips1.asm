@@ -1,8 +1,10 @@
-#S0Ham 
-.data
-.text 
-.globl main
- main:
-   li $v0,4
-   addi $a0,$zero,0
-   syscall 
+.data 
+
+.text
+	li $t0 , 5
+	
+	#for printing 
+	 li $v0, 1
+	 add $a0, $zero ,$t0
+	 syscall
+	 
